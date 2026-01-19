@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Alona 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: pop 1s ease;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      background: #ff4d6d;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff1e50;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0); }
+      to { transform: scale(1); }
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 40px;
+      height: 60px;
+      background: red;
+      border-radius: 50%;
+      animation: float 6s infinite ease-in;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-120vh); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎂 Happy Birthday Alona 🎉</h1>
+    <p>
+      Alona,<br><br>
+      Today is special because **YOU** were born 💖  
+      May your life be filled with happiness, smiles,  
+      and beautiful moments always ✨
+    </p>
+    <button onclick="alert('You are truly special 💕')">
+      Click me 🎁
+    </button>
+  </div>
+
+  <div class="balloon" style="left:10%; background:#ff4d6d;"></div>
+  <div class="balloon" style="left:30%; background:#ffd166;"></div>
+  <div class="balloon" style="left:50%; background:#06d6a0;"></div>
+  <div class="balloon" style="left:70%; background:#4cc9f0;"></div>
+  <div class="balloon" style="left:90%; background:#9b5de5;"></div>
+
+</body>
+</html>
